@@ -20,7 +20,7 @@ public class PowerExperiments {
     static void simplePowerExperiments(){
         System.out.println("n,count");
 
-        for(int i = 0; i < 20; i++){
+        for(int i = 0; i <= 20; i++){
             count = 0;
             power(2,i);
             System.out.println(i + "," + count);
@@ -32,22 +32,21 @@ public class PowerExperiments {
         double q = x;
         int m = n;
 
-        while(m > 0){
-            if(m % 2 != 0){
+        while (m > 0){
+            if (m % 2 != 0){
                 p = p * q;
             }
             m = (int)Math.floor(m/2);
-            q = q * q; 
-            count++; 
+            q = q * q;
+            count++;
         }
-
-        return(p);
+        
+        return p;
     }
 
     static void smartPowerExperiments(){
         System.out.println("n,count");
-
-        for(int i = 0; i < 20; i++){
+        for (int i = 0; i <= 20; i++){
             count = 0;
             smartPower(2,i);
             System.out.println(i + "," + count);
